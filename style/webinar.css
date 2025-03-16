@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    background-color:  #f8f8f8;   
+    display: flex; 
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+h1{    
+    text-align: center;
+    margin-top: 60px;
+}
+
+.container {
+    flex: 1;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;    
+}
+
+.webinar {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0; 
+    max-width: 600px;   
+}
+
+video {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-top: 10px;   
+    border-radius: 5px; 
+}
+
+.webinar p{
+    width: 100%;
+    max-width: 600px;
+    text-align: justify;
+    font-style: italic;
+    
+}
+
+.admin-buttons {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.btn {
+    padding: 8px 15px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    width: 150px;
+    align-items: center;
+}
+
+.btn-delete {
+    background-color: grey;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: gray;
+    text-decoration: none;    
+    display: inline-block;    
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Затемнённое видео для заблокированных вебинаров */
+.locked-video {
+    filter: grayscale(100%) brightness(50%);
+    pointer-events: none; /* Запрещает клик по видео */
+}
+
+.buy-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;    
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;    
+}
+
+.btn-buy{
+    background-color: rgb(70, 72, 69);
+    cursor: pointer;
+    width: 100%;  
+    border-radius: 4px; 
+    max-width: 600px; 
+}
+
+.btn-buy:hover{
+    background-color: #0056b3;
+}
+
+.btn-edit:hover{
+    background-color: orange;
+}
+
+.btn-delete:hover{
+    background-color: red;
+}
+
+footer {
+    margin-top: auto;
+}

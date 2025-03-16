@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    justify-content: center;     
+    font-family: Arial, sans-serif; 
+    background-color: #f8f8f8;
+    display: flex; 
+}
+
+form {    
+    padding: 20px; 
+    border-radius: 10px;     
+    width: 250px;    
+}
+
+form h3{
+    text-align: center;
+}
+
+form input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    background-color: #ccc;
+}
+
+form button {
+    width: 100%; 
+    padding: 10px; 
+    background: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+form button:hover {
+    background: #0056b3; 
+}
+
+.optionGender{
+    display:inline-flex;
+    font-size: small;
+    flex-direction: row;     
+    text-align: center; 
+    margin-left:30px; 
+    
+}
+
+.haveAcc{
+    margin-top: 10px;
+    display:flex;
+    font-size: small;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.haveAcc p {
+    margin: 0; 
+    color: #007BFF;
+}
+
+.haveAcc a {    
+    text-decoration: none; 
+    font-weight: bold; 
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.haveAcc a:hover{
+    color: #0056b3;
+}
+
+.error {
+    font-size: small;
+    color: red;
+    text-align: center;
+}

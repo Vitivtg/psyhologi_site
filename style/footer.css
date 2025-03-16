@@ -1,0 +1,108 @@
+html, body {
+    height: auto;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+footer {
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 20px;
+    background-color: rgb(14, 22, 24);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    position: relative;
+    bottom: 0;
+    color: white;  
+    margin-top: auto;   
+}
+
+footer p, footer a {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: white; 
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 32px; 
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon.telegram {
+    color: #0088cc;
+}
+
+.social-icon.telegram:hover {
+    color: #1da1f2;
+    transform: scale(1.2);
+}
+
+.social-icon.instagram {
+    color: #E4405F;
+}
+
+.social-icon.instagram:hover {
+    color: #FF0066;
+    transform: scale(1.2);
+}
+
+.social-icon.viber {
+    color: #7360F2;
+}
+
+.social-icon.viber:hover {
+    color: #8C72E2;
+    transform: scale(1.2);
+}
+
+.social-icon.email {
+    color: #333; 
+}
+
+.social-icon.email:hover {
+    color: #ff6600; 
+    transform: scale(1.2);
+}
+
+@media (max-width: 1000px) {
+    footer {         
+        text-align: center;
+        padding: 10px;
+        gap: 10px; 
+    }
+    
+    footer p, footer a {
+        font-size: 14px; 
+    }
+    
+    .social-icons {
+        gap: 10px; 
+        margin-top: 5px;
+    }
+    
+    .social-icon {
+        font-size: 24px; 
+    }
+}
+
+

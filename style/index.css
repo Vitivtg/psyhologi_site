@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Lora', serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;    
+    gap: 30px; 
+    flex-wrap: wrap;   
+}
+
+.text{
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.content div {
+    display: flex;
+    align-items: flex-start; 
+    
+}
+
+.img_info{
+    width: 400px;
+    height: auto; 
+    margin: auto;   
+}
+
+.information{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    gap: 30px;  
+    padding-top: 10px;
+}
+
+.information p {    
+    text-align: center;
+    font-style: italic; 
+    margin: auto; 
+    font-size: 18px;  
+}
+
+h3{
+    margin: auto;
+}
+
+.letter{
+    display: flex;
+    flex-direction: column;  
+    text-align: justify; 
+    color: #333 !important;
+    font-family: 'Lora', serif !important;
+}
+
+.headPhoto {
+    float: left; 
+    margin-right: 20px; 
+    width: 600px; 
+    max-width: 100%;
+    height: auto;    
+    margin-left: 0;  
+    padding-left: 20px; 
+}
+
+.text p {    
+    line-height: 1.6; 
+    width: 600px;
+    font-size:18px;   
+    max-width: 100%;     
+}
+
+.content > div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+@media (max-width: 1000px) {
+
+    .content {
+        flex-direction: column;
+        margin-top: 120px; 
+        gap: 20px;
+    }
+
+    .headPhoto {
+        width: 90%; 
+        margin: 0 auto; 
+        float: none;
+    }
+
+    .text, .letter {
+        width: 90%; 
+        margin: 0 auto;
+    }
+
+    .text p {
+        width: 100%; 
+        font-size: 16px; 
+    }
+
+    .information {
+        width: 90%; 
+        margin: 30px auto;
+    }
+
+    .img_info {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    .information p {
+        font-size: 16px;
+        margin: 10px auto;
+    }
+}

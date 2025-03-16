@@ -1,0 +1,150 @@
+html,body{
+    background-color:  #f8f8f8;    
+    margin: 0; 
+    padding: 0;
+    min-height: 100vh;   
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lora', serif;
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;    
+}
+
+.calendar {    
+    max-width: 400px;
+    margin: 20px auto;
+    border: none;
+    text-align: center;
+    font-family: Arial, sans-serif; 
+    border-radius: 10px;   
+    box-shadow: 
+        -2px -2px 5px rgba(255, 255, 255, 0.8), /* Светлая тень сверху и слева */
+         2px  2px 5px rgba(0, 0, 0, 0.2);       /* Темная тень снизу и справа */
+    border-radius: 10px;
+}
+
+.calendar-header {
+    background: black;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;  
+    border-radius: 10px 10px 0 0;  
+    color: white;   
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: rgb(222, 205, 205);
+    border-radius: 0 0 10px 10px;  
+    color: black; 
+}
+
+.day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 10px;   
+}
+
+.inactive {
+    color: gray;
+    cursor: not-allowed;
+}
+
+.today {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.month-nav button {
+    background-color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.month-nav button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#prev-month, #next-month {
+    font-weight: bold;
+    background-color: black;
+    border-style: none;
+    color: white;
+}
+
+.month-nav{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+h3 {
+    text-align: center; 
+    margin-top: -100px;   
+}
+
+.select_time {
+    text-align: center;
+}
+
+.record_consultation {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+    width: max-content;  
+    box-shadow: 
+        -2px -2px 5px rgba(255, 255, 255, 0.8), 
+         2px  2px 5px rgba(0, 0, 0, 0.2);       
+    border-radius: 10px; 
+    
+}
+
+.record_consultation:hover {
+    background-color: #45a049;
+}
+
+.error {
+    font-size: small;
+    color: red;
+    text-align: center; 
+    width: 100%;
+    padding: 0;
+    background-color:white;
+    border-radius: 5px;    
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 10px;
+}
+
+.success{
+    font-size: medium;
+    color: rgb(7, 192, 7);
+    text-align: center;
+    width: 100%;
+}

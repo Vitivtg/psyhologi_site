@@ -1,0 +1,134 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    justify-content: center;    
+    font-family: Arial, sans-serif; 
+    background-color: #f8f8f8;
+    display: flex; 
+    align-items: center;  
+    margin-top: -200px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    width: 100%;
+    position: relative; 
+    margin: 40px;
+}
+
+form {    
+    padding: 20px; 
+    border-radius: 10px;    
+    width: 250px;  
+    justify-content: center;  
+}
+
+form h3{
+    text-align: center;
+}
+
+form input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    background-color: #ccc;
+}
+
+form button {
+    width: 100%; 
+    padding: 10px; 
+    background: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+form button:hover {
+    background: #0056b3; 
+}
+
+.haveAcc{
+    margin-top: 10px;
+    display:flex;
+    font-size: small;
+    align-items: center; 
+    gap: 20px; 
+    justify-content: center;
+}
+
+.haveAcc p {
+    margin: 0; 
+    color: #007BFF;
+}
+
+.haveAcc a {    
+    text-decoration: none; 
+    font-weight: bold; 
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.haveAcc a:hover{
+    color: #0056b3;
+}
+
+.success{
+    color: rgb(12, 12, 233);
+    padding: 10px;
+    text-align: center;    
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10;
+    justify-content: center;
+    font-size:x-large;
+    font-weight: bold;    
+}
+
+.form-container p{
+    padding: 0;
+    margin: 0;
+}
+
+.form{    
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+}
+
+.error {
+    font-size: small;
+    color: red;
+    text-align: center; 
+    width: 100%;
+    padding: 0;
+    background-color:white;
+    border-radius: 5px;    
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 10px;
+}
+
+.success{
+    font-size: medium;
+    color: rgb(7, 192, 7);
+    text-align: center;
+    width: 100%;
+}

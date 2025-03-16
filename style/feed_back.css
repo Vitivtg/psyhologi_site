@@ -1,0 +1,101 @@
+html, body {     
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;    
+}    
+
+.container {      
+    min-width: 400px;
+    max-width: 600px;    
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 120px auto 20px auto;    
+}
+
+footer {
+    margin-top: auto; 
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
+
+h2 {    
+    text-align: center;
+    color: #333;
+}
+
+form {    
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    min-width: 400px;
+    max-width: 580px;
+    max-height: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #0056b3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+@media (max-width: 1000px) {    
+    .container {
+        width: 90%; 
+        min-width: unset; 
+        max-width: 500px; 
+        margin: 100px auto 20px auto;
+        padding: 15px;
+    }
+    
+    input, textarea {
+        width: 95%;
+        min-width: unset;
+        max-width: unset;
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    button {
+        width: 100%; 
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    html, body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
