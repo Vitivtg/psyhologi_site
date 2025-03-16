@@ -1,20 +1,23 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-}
-
-body{
-    justify-content: center;     
-    font-family: Arial, sans-serif; 
+    min-height: 100vh;
     background-color: #f8f8f8;
-    display: flex; 
+    display: flex;
+    flex-direction: column;  
+    font-family: Arial, sans-serif; 
 }
 
-form {    
+form { 
+    min-width: 400px;
+    max-width: 600px;       
     padding: 20px; 
     border-radius: 10px;     
-    width: 250px;    
+    width: 250px;   
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 120px auto 20px auto;     
 }
 
 form h3{
@@ -28,7 +31,7 @@ form input {
     border: 1px solid #ccc; 
     border-radius: 5px; 
     box-sizing: border-box; 
-    background-color: #ccc;
+    background-color: white;
 }
 
 form button {
@@ -42,7 +45,7 @@ form button {
 }
 
 form button:hover {
-    background: #0056b3; 
+    background: #218838; 
 }
 
 .optionGender{
@@ -50,8 +53,7 @@ form button:hover {
     font-size: small;
     flex-direction: row;     
     text-align: center; 
-    margin-left:30px; 
-    
+    margin-left:30px;    
 }
 
 .haveAcc{
@@ -83,4 +85,36 @@ form button:hover {
     font-size: small;
     color: red;
     text-align: center;
+}
+
+@media (max-width: 1000px) {
+    form {
+        width: 90%;
+        min-width: unset;
+        max-width: 500px;
+        margin: 100px auto 20px auto;
+        padding: 15px;
+    }
+
+    input {
+        width: 95%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
